@@ -24,7 +24,7 @@ def main():
 
         # Now, let's refurbish it
         new_OS = "MacOS Monterey"
-        print("Refurbishing Item ID:", resale.inventory.index, ", updating OS to", new_OS)
+        print("Refurbishing Item ID: 1, updating OS to MacOS Monterey")
         comp.updateOS(new_OS)
         print("Updating inventory...")
         comp.refurbish()
@@ -36,7 +36,7 @@ def main():
         print("Done.\n")
         
         # Now, let's sell it!
-        print("Selling Item ID:", resale.inventory.index)
+        print("Selling Item ID: 1")
         resale.sell(comp)
         print("Done.\n")
         

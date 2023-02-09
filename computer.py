@@ -8,10 +8,9 @@ class Computer:
     operating_system: str = ""
     year_made: int = 0
     price: int = 0
-    ID: int = 0
 
     # constructor
-    def __init__(self, description, processor_type, hard_drive_capacity, memory, operating_system, year_made, price, ID):
+    def __init__(self, description, processor_type, hard_drive_capacity, memory, operating_system, year_made, price):
         self.description = description
         self.processor_type = processor_type
         self.hard_drive_capacity = hard_drive_capacity
@@ -19,8 +18,8 @@ class Computer:
         self.operating_system = operating_system
         self.year_made = year_made
         self.price = price
-        self.ID = ID
 
+    #print the computer details
     def printDetails(self):
         print("Description: ", self.description)
         print("Processor type: ", self.processor_type)
@@ -29,8 +28,8 @@ class Computer:
         print("Operating system: ", self.operating_system)
         print("Year made: ", self.year_made)
         print("Price: ", self.price)
-        print("ID: ", self.ID)
         
+    #refurbishing the price depending on the year made 
     def refurbish(self):
         if self.year_made < 2000:
             self.price = 0 
@@ -41,6 +40,7 @@ class Computer:
         else:
             self.price = 1000 
 
+    #updating the operating system
     def updateOS(self, new_os: str):
         self.operating_system = new_os
     

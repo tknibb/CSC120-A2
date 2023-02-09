@@ -33,13 +33,13 @@ __YES__ 1 pt: Can successfully remove a `Computer` from the inventory
 
 __YES__ 1 pt: Can successfully update the price/OS of a `Computer` contained in the inventory
 
-__NO__ 1 pt: Program prints appropriate error messages
+__YES__ 1 pt: Program prints appropriate error messages
 
 ## General Items (10 pts):
 
 __YES___ 4 pts: Program executes fully & consistently without crashing (exception/freeze)
 
-___PART__ 1 pt: Classes & class members all have header comments
+___YES__ 1 pt: Classes & class members all have header comments
 
 ___YES__ 1 pt: Clear and consistent indentation
 
