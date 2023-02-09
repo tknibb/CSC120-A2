@@ -1,10 +1,21 @@
+from computer import *
+
 class ResaleShop:
+    name = "Taylor's Store"
+    inventory: list
 
-    # What attributes will it need?
+    def __init__(self):
+        self.inventory = []
 
-    # How will you set up your constructor?
-    # Remember: in python, all constructors have the same name (__init__)
-    def __init__():
-        pass # You'll remove this when you fill out your constructor
+    def buy(self, computer: Computer):
+        self.inventory.append(computer)
 
-    # What methods will you need?
+    def sell(self, computer: Computer):
+        self.inventory.remove(computer)
+        
+    def print_inventory(self, computer: Computer):
+        for computer in self.inventory:
+            computer.printDetails()
+
+   
+        
